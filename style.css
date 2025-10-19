@@ -1,83 +1,45 @@
 :root {
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+    --color-accent: hsl(158, 36%, 37%);
+    --color-accent-dark: hsl(158, 36%, 17%);
+    --light-background: hsl(30, 38%, 92%);
+
+    --headings-text-color: hsl(212, 21%, 14%);
+    --main-text-color: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
     --ff-primary: 'Montserrat', sans-serif;
-    --ff-secondary: 'Montserrat', sans-serif;
     --ff-accent: 'Fraunces', serif;
+
+    --fs-small: 0.625rem;
+    --fs-normal: 1.125rem;
+    --fs-Large: 2.25rem;
+    --fs-XLarge: 3.25rem;
 
     --fw-normal: 500;
     --fw-bold: 700;
+}
 
-  --spacer: 1rem;
-  --clr-neutral-100: 0 0% 100%;
-  --clr-neutral-200: 0 0% 90%;
-  --clr-neutral-300: 0 0% 70%;
-  --clr-neutral-400: 0 0% 60%;
-  --clr-neutral-500: 0 0% 50%;
-  --clr-neutral-600: 0 0% 40%;
-  --clr-neutral-700: 0 0% 30%;
-  --clr-neutral-800: 0 0% 10%;
-  --clr-neutral-900: 0 0% 0%;
-  --clr-primary-100: 214 100% 90%;
-  --clr-primary-200: 214 100% 80%;
-  --clr-primary-300: 214 100% 70%;
-  --clr-primary-400: 214 100% 60%;
-  --clr-primary-500: 214 100% 50%;
-  --clr-primary-600: 214 100% 40%;
-  --clr-primary-700: 214 100% 30%;
-  --clr-primary-800: 214 100% 20%;
-  --clr-primary-900: 214 100% 10%;
-  --clr-secondary-100: 284 71% 90%;
-  --clr-secondary-200: 284 71% 80%;
-  --clr-secondary-300: 284 71% 70%;
-  --clr-secondary-400: 284 71% 60%;
-  --clr-secondary-500: 284 71% 50%;
-  --clr-secondary-600: 284 71% 40%;
-  --clr-secondary-700: 284 71% 30%;
-  --clr-secondary-800: 284 71% 20%;
-  --clr-secondary-900: 284 71% 10%;
-  --clr-accent-100: 346 80% 90%;
-  --clr-accent-200: 346 80% 80%;
-  --clr-accent-300: 346 80% 70%;
-  --clr-accent-400: 346 80% 60%;
-  --clr-accent-500: 346 80% 50%;
-  --clr-accent-600: 346 80% 40%;
-  --clr-accent-700: 346 80% 30%;
-  --clr-accent-800: 346 80% 20%;
-  --clr-accent-900: 346 80% 10%;
-  --fs-100: 0.625rem;
-  --fs-200: 0.7625rem;
-  --fs-300: 0.8975rem;
-  --fs-400: 1.125rem;
-  --fs-500: 1.25rem;
-  --fs-600: 1.75rem;
-  --fs-700: 2.25rem;
-  --fs-800: 2.75rem;
-  --fs-900: 3.25rem;
-}
 @media only screen and (min-width: 50em) {
-  :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.325rem;
-    --fs-600: 2rem;
-    --fs-700: 2.75rem;
-    --fs-800: 3.25rem;
-    --fs-900: 4rem;
-  }
+    :root {
+        --fs-small: 0.625rem;
+        --fs-normal: 1.125rem;
+        --fs-Large: 2.75rem;
+        --fs-XLarge: 4rem;
+    }
 }
+
 @media only screen and (min-width: 65em) {
-  :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.325rem;
-    --fs-600: 2rem;
-    --fs-700: 2.75rem;
-    --fs-800: 3.5rem;
-    --fs-900: 5rem;
-  }
+    :root {
+        --fs-small: 0.625rem;
+        --fs-normal: 1.125rem;
+        --fs-Large: 2.75rem;
+        --fs-XLarge: 5rem;
+    }
+
 }
 
 
@@ -85,15 +47,12 @@
  CSS Resets 
  ***********/
 
-
-/* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -104,44 +63,105 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-secondary);
+}
+
 ul {
-  list-style: none;
+    list-style: none;
 }
 
-/* Set core root defaults */
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+    min-height: 100vh;
+    line-height: 1.5;
 }
 
-/* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
+
 
 /**************
  General Styles
  **************/
 
- body {
+body {
     font-family: var(--ff-primary);
- }
+    color: var(--main-text-color);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-normal);
+}
+
+.container {
+    max-width: 1088px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    gap: 0.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.card {
+    aspect-ratio: 1 / 1.5;
+    border: 3px solid var(--color-accent);
+}
+
+.card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+
+.card__content {
+    background: var(--White);
+    align-self: flex-end;
+    margin: 0.5rem 0.5rem 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(0 0 0 / 0.1);
+}
+
+.card__title {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: var(--headings-text-color)
+}
+
+.card__price {
+    font-size: 1.75rem;
+}
+
+.product-title {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-accent-dark);
+    padding: 0.125em 0.5em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 60em) {
+    .card__img {
+        aspect-ratio: 1 / 1;
+    }
+}
