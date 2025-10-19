@@ -38,6 +38,11 @@ ul {
     list-style: none;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,6 +63,8 @@ button,
 textarea,
 select {
     font: inherit;
+    display: block;
+    margin-bottom: 1rem;
 }
 
 
@@ -70,8 +77,26 @@ body {
     color: var(--main-text-color);
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    background-color: var(--color-accent-dark);
+    padding-block: 0.075em;
+    opacity: 0.8;
+}
+
+.nav-list {
+    display: flex;
+    color: var(--White);
+    gap: 2em;
+}
+
 .section {
-    margin-block-end: 2em;
+    margin-block: 2em;
+    scroll-margin-top: 5em;
 }
 
 .section-title {
@@ -121,6 +146,17 @@ body {
 
 .card__price {
     font-size: 1.75rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.contact-section-img {
+    object-fit: cover;
 }
 
 @media (min-width: 60em) {

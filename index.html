@@ -14,6 +14,17 @@
 </head>
 
 <body>
+
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#About" class="nav-link">About</a></li>
+                <li><a href="#Products" class="nav-link">Products</a></li>
+                <li><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
 
         <section id="About" class="section">
@@ -114,16 +125,18 @@
         </section>
 
         <section id="Contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
-                    magnam? Autem, deleniti ut voluptate quos culpa ex unde dolorem, ratione, esse eveniet fugiat
-                    voluptas ad? Sapiente maiores dicta architecto velit iusto in alias, excepturi quidem perspiciatis
-                    illo libero. Dicta enim quasi recusandae reprehenderit architecto nobis corrupti explicabo sit nisi
-                    repellendus? Nemo explicabo modi culpa quisquam repellat nesciunt expedita neque, provident sequi.
-                    Corporis cupiditate, ullam dolorem nulla pariatur amet laboriosam odio corrupti nisi quo, vel alias
-                    ducimus a harum deserunt consequatur repellendus asperiores recusandae culpa? Nobis cumque similique
-                    aliquid! Eum, officiis. Architecto dolores est ducimus assumenda cupiditate ipsa odio sunt ex?</p>
+            <div class="container contact-grid">
+                <img src="img/gitary/gitara6.jpg" alt="greyscale image of guitar" class="contact-section-img">
+
+                <form id="form" class="form" action="#" method="post">
+
+                    <h2 class="contact-title">Contact Us</h2>
+
+                    <input type="email" id="email" class="email" placeholder="Email Address" autocomplete="email" data-wrong="false" required>
+                    <input type="text" id="name" class="name" placeholder="Name" required>
+                    <input type="text" id="phone-number" class="phone-number" placeholder="999 888 777">
+                    <input type="submit" id="button" class="button" value="submit">
+                </form>
             </div>
         </section>
 
