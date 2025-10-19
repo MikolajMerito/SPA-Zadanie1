@@ -1,8 +1,4 @@
 :root {
-
-    --Mobile: 375px;
-    --Desktop: 1440px;
-
     --color-accent: hsl(158, 36%, 37%);
     --color-accent-dark: hsl(158, 36%, 17%);
     --light-background: hsl(30, 38%, 92%);
@@ -13,35 +9,7 @@
 
     --ff-primary: 'Montserrat', sans-serif;
     --ff-accent: 'Fraunces', serif;
-
-    --fs-small: 0.625rem;
-    --fs-normal: 1.125rem;
-    --fs-Large: 2.25rem;
-    --fs-XLarge: 3.25rem;
-
-    --fw-normal: 500;
-    --fw-bold: 700;
 }
-
-@media only screen and (min-width: 50em) {
-    :root {
-        --fs-small: 0.625rem;
-        --fs-normal: 1.125rem;
-        --fs-Large: 2.75rem;
-        --fs-XLarge: 4rem;
-    }
-}
-
-@media only screen and (min-width: 65em) {
-    :root {
-        --fs-small: 0.625rem;
-        --fs-normal: 1.125rem;
-        --fs-Large: 2.75rem;
-        --fs-XLarge: 5rem;
-    }
-
-}
-
 
 /**********
  CSS Resets 
@@ -64,13 +32,6 @@ blockquote,
 dl,
 dd {
     margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: var(--ff-secondary);
 }
 
 ul {
@@ -107,8 +68,18 @@ select {
 body {
     font-family: var(--ff-primary);
     color: var(--main-text-color);
-    font-size: var(--fs-normal);
-    font-weight: var(--fw-normal);
+}
+
+.section {
+    margin-block-end: 2em;
+}
+
+.section-title {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-accent-dark);
+    padding: 0.125em 0.5em;
+    margin-bottom: 1em;
 }
 
 .container {
@@ -150,14 +121,6 @@ body {
 
 .card__price {
     font-size: 1.75rem;
-}
-
-.product-title {
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color-accent-dark);
-    padding: 0.125em 0.5em;
-    margin-bottom: 1em;
 }
 
 @media (min-width: 60em) {
